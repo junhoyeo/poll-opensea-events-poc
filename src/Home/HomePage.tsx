@@ -74,7 +74,8 @@ const HomePage = () => {
             ]);
           }
         }
-      });
+      })
+      .catch(console.error);
   }, [thresholdDate, events]);
 
   const firstFetchRef = useRef<boolean>(false);
