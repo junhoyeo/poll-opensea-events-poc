@@ -88,7 +88,7 @@ const HomePage = () => {
 
   useInterval(() => {
     fetchData();
-  }, 3_000);
+  }, 10_000);
 
   const sortedData = useMemo(() => {
     return events.sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
